@@ -24,10 +24,10 @@ var ad="https:"
  console.log(icon+" "+temc+" "+tempf+' '+place+" "+textt);
  var icon2=ad+icon;
  console.log(icon2);
- document.getElementById("place").append(place);
- document.getElementById("text").append(textt);
- document.getElementById("temp").append(temc);
- document.getElementById("temp2").append(tempf);
+ document.getElementById("place").innerHTML="Place:  "+place;
+ document.getElementById("text").innerHTML= "Status:  "+textt;
+ document.getElementById("temp").innerHTML="Temperature in Celsius:  "+temc;
+ document.getElementById("temp2").innerHTML="Temperature in Farenheit: "+tempf;
  document.getElementById("bod").style.backgroundImage=`url(${icon2})`; 
 document.getElementById("info").style.display="block";
 
