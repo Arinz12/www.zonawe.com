@@ -30,6 +30,8 @@ var ad="https:"
  document.getElementById("temp2").append(tempf);
  document.getElementById("bod").style.backgroundImage=`url(${icon2})`; 
 document.getElementById("info").style.display="block";
+
+document.getElementById("locationi").value="";
     } 
     
     catch (error) {
