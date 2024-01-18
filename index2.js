@@ -14,16 +14,16 @@ async function check(){
  var result= await fetch(url,{mode:"cors"});
  var result2= await result.json();
  
- console.log(result2);
+ 
 var ad="https:"
  var place=result2.location.name;
  var icon=result2.current.condition.icon;
  var temc=result2.current.temp_c;
  var tempf=result2.current.temp_f;
  var textt=result2.current.condition.text;
- console.log(icon+" "+temc+" "+tempf+' '+place+" "+textt);
+ 
  var icon2=ad+icon;
- console.log(icon2);
+ 
  document.getElementById("place").innerHTML="Place:  "+place;
  document.getElementById("text").innerHTML= "Status:  "+textt;
  document.getElementById("temp").innerHTML="Temperature in Celsius:  "+temc;
